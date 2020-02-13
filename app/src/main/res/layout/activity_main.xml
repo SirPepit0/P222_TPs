@@ -28,14 +28,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cliquer ici"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="667dp" />
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="539dp" />
 
     <TextView
-        android:layout_width="161dp"
-        android:layout_height="166dp"
-        android:text="lol"
-        tools:layout_editor_absoluteX="185dp"
-        tools:layout_editor_absoluteY="282dp" />
+        android:layout_width="71dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="..."
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="277dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
