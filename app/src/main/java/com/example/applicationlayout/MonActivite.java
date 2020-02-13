@@ -14,65 +14,59 @@ public class MonActivite extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout);
 
-        this.displayMessage("onCreate");
-
-        /*
-        TextView view = findViewById(R.id.textView2);
+        // Affichage du toast
+        Toast.makeText(getApplicationContext(), "onCreate!", Toast.LENGTH_SHORT).show();
 
         for(int i = 0 ; i < 50 ; i++) {
             TextView blabla = new TextView(this);
-            blabla.setText("Item #"+i);
-            view.setContentDescription();
-
         }
-         */
-    }
-
-    private void displayMessage(string mess) {
-        // Affichage du toast
-        Toast.makeText(getApplicationContext(), mess, Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onStart() {
         super.onStart();
 
-        this.displayMessage("onStart");
+        Toast.makeText(getApplicationContext(), "onStart!", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
 
-        this.displayMessage("onResume");
+        // Affichage du toast
+        Toast.makeText(getApplicationContext(), "onResume!", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
 
-        this.displayMessage("onPause");
+        // Affichage du toast
+        Toast.makeText(getApplicationContext(), "onPause!", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onStop() {
         super.onStop();
 
-        this.displayMessage("onStop");
+        // Affichage du toast
+        Toast.makeText(getApplicationContext(), "onStop!", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
 
-        this.displayMessage("onDestroy");
+        // Affichage du toast
+        Toast.makeText(getApplicationContext(), "onDestroy!", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
 
-        this.displayMessage("onRestart");
+        // Affichage du toast
+        Toast.makeText(getApplicationContext(), "onRestart!", Toast.LENGTH_SHORT).show();
     }
 
 }
