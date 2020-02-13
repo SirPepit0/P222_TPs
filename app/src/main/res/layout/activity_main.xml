@@ -7,11 +7,11 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="425dp"
-        android:layout_height="22dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:text="@string/textview"
         android:textColor="#FF000FFF"
-        android:gravity="center"
+        android:gravity="top|center"
         android:fontFamily="monospace"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
