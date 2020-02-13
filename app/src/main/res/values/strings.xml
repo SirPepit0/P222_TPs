@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ApplicationLayout</string>
+    <string name="testMessage">TEST</string>
+    <string name="titreTV">Jean Pierre</string>
+</resources>
