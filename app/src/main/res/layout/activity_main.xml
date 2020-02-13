@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="425dp"
         android:layout_height="22dp"
-        android:text="TextView"
+        android:text="@string/textview"
         android:textColor="#FF000FFF"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
