@@ -3,6 +3,7 @@ package com.example.applicationlayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -13,62 +14,65 @@ public class MonActivite extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout);
 
-        // Affichage du toast
-        Toast.makeText(getApplicationContext(), "onCreate!", Toast.LENGTH_SHORT).show();
+        this.displayMessage("onCreate");
+
+        /*
+        TextView view = findViewById(R.id.textView2);
 
         for(int i = 0 ; i < 50 ; i++) {
             TextView blabla = new TextView(this);
             blabla.setText("Item #"+i);
-            findViewById("@textView2");
+            view.setContentDescription();
+
         }
+         */
+    }
+
+    private void displayMessage(string mess) {
+        // Affichage du toast
+        Toast.makeText(getApplicationContext(), mess, Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onStart() {
         super.onStart();
 
-        // Affichage du toast
-        Toast.makeText(getApplicationContext(), "onStart!", Toast.LENGTH_SHORT).show();
+        this.displayMessage("onStart");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
 
-        // Affichage du toast
-        Toast.makeText(getApplicationContext(), "onResume!", Toast.LENGTH_SHORT).show();
+        this.displayMessage("onResume");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
 
-        // Affichage du toast
-        Toast.makeText(getApplicationContext(), "onPause!", Toast.LENGTH_SHORT).show();
+        this.displayMessage("onPause");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
 
-        // Affichage du toast
-        Toast.makeText(getApplicationContext(), "onStop!", Toast.LENGTH_SHORT).show();
+        this.displayMessage("onStop");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
 
-        // Affichage du toast
-        Toast.makeText(getApplicationContext(), "onDestroy!", Toast.LENGTH_SHORT).show();
+        this.displayMessage("onDestroy");
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
 
-        // Affichage du toast
-        Toast.makeText(getApplicationContext(), "onRestart!", Toast.LENGTH_SHORT).show();
+        this.displayMessage("onRestart");
     }
 
 }
