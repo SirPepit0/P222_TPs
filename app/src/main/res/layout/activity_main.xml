@@ -27,16 +27,18 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cliquer ici"
+        android:text="@string/cliquer_ici"
         tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="539dp" />
+        tools:layout_editor_absoluteY="539dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:layout_width="71dp"
         android:layout_height="48dp"
         android:gravity="center"
-        android:text="..."
+        android:text="@string/threedots"
         tools:layout_editor_absoluteX="170dp"
-        tools:layout_editor_absoluteY="277dp" />
+        tools:layout_editor_absoluteY="277dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
