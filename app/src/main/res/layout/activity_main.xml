@@ -37,7 +37,7 @@
         android:layout_width="71dp"
         android:layout_height="48dp"
         android:gravity="center"
-        android:text="@string/threedots"
+        android:text="..."
         tools:layout_editor_absoluteX="170dp"
         tools:layout_editor_absoluteY="277dp"
         tools:ignore="MissingConstraints" />
