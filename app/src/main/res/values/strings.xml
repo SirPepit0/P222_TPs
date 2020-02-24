@@ -2,6 +2,5 @@
     <string name="app_name">TP2</string>
     <string name="textview">TextView</string>
     <string name="cliquer_ici">Cliquer ici</string>
-    <string name="treedots">...</string>
-    <string name="threedots">threedots</string>
+    <string name="threedots">...</string>
 </resources>

@@ -23,23 +23,37 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.004" />
 
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="bottom|center"
+        android:onClick="setText"
         android:text="@string/cliquer_ici"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="539dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.971"
         tools:ignore="MissingConstraints" />
 
-
     <TextView
-        android:layout_width="71dp"
-        android:layout_height="48dp"
+        android:id="@+id/textThreeDots"
+        android:layout_width="150dp"
+        android:layout_height="41dp"
         android:gravity="center"
-        android:text="..."
-        tools:layout_editor_absoluteX="170dp"
-        tools:layout_editor_absoluteY="277dp"
+        android:text="LALILULELO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
