@@ -7,6 +7,8 @@ import android.os.strictmode.InstanceCountViolation;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,13 +23,13 @@ public class MainActivity extends AppCompatActivity {
 
         // Création écouteur
         Ecouteur e = new Ecouteur();
-        Ecouteur eTexte = new Ecouteur();
 
         //Récupération du composant bouton
-        Button b1 = (Button)findViewById(R.id.buttonPlus);
-        Button b2 = (Button)findViewById(R.id.buttonMoins);
-        Button b3 = (Button)findViewById(R.id.buttonMultiplie);
-        Button b4 = (Button)findViewById(R.id.buttonDivise);
+        RadioGroup radio = (RadioGroup)findViewById(R.id.radio);
+        RadioButton b1 = (RadioButton)findViewById(R.id.radioPlus);
+        RadioButton b2 = (RadioButton)findViewById(R.id.radioMoins);
+        RadioButton b3 = (RadioButton)findViewById(R.id.radioMultiplie);
+        RadioButton b4 = (RadioButton)findViewById(R.id.radioDivise);
 
         //Enregistrement
         b1.setOnClickListener(e);
@@ -38,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
     class Ecouteur implements View.OnClickListener {
         //Récupération du TextView '...'
-        TextView texte = (TextView)findViewById(R.id.textResultat);
+        TextView texte = (TextView)findViewById(R.id.texteResultat);
 
         //Récupération des composants opérandes
         EditText op1 = (EditText)findViewById(R.id.opérande1);
@@ -49,27 +51,37 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             /* Méthode par switch : */
+            boolean checked = ((RadioButton) v).isChecked();
 
             switch (v.getId()) {
-                case R.id.buttonPlus:
-                    res = Integer.parseInt(op1.getText().toString()) + Integer.parseInt(op2.getText().toString());
-                    texte.setText("" + res);
+                case R.id.radioPlus:
+                    if(checked) {
+                        res = Integer.parseInt(op1.getText().toString()) + Integer.parseInt(op2.getText().toString());
+                        texte.setText(res);
+                    }
                     break;
-                case R.id.buttonMoins:
-                    res = Integer.parseInt(op1.getText().toString()) - Integer.parseInt(op2.getText().toString());
-                    texte.setText("" + res);
+                case R.id.radioMoins:
+                    if (checked) {
+                        res = Integer.parseInt(op1.getText().toString()) - Integer.parseInt(op2.getText().toString());
+                        texte.setText(res);
+                    }
                     break;
-                case R.id.buttonMultiplie:
-                    res = Integer.parseInt(op1.getText().toString()) * Integer.parseInt(op2.getText().toString());
-                    texte.setText("" + res);
+                case R.id.radioMultiplie:
+                    if(checked) {
+                        res = Integer.parseInt(op1.getText().toString()) * Integer.parseInt(op2.getText().toString());
+                        texte.setText(res);
+                    }
                     break;
-                case R.id.buttonDivise:
-                    res = Integer.parseInt(op1.getText().toString()) / Integer.parseInt(op2.getText().toString());
-                    texte.setText("" + res);
+                case R.id.radioDivise:
+                    if(checked) {
+                        res = Integer.parseInt(op1.getText().toString()) / Integer.parseInt(op2.getText().toString());
+                        texte.setText(res);
+                    }
                     break;
                 default:
                     throw new IllegalStateException("Unexpected value: " + v);
             }
         }
+
     }
 }
