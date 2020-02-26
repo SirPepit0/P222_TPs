@@ -165,6 +165,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
+        android:id="@+id/calculer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calculer"
@@ -178,7 +179,7 @@
         tools:ignore="MissingConstraints" />
 
     <RadioGroup
-        android:id="@+id/radio"
+        android:id="@+id/radioGroupe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"

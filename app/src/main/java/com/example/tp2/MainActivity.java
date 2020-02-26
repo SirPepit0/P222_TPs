@@ -51,6 +51,17 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             /* Méthode par switch : */
+
+            RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radio);
+
+            switch (v.getId()) {
+                case R.id.calculer:
+                    int selectedId = radioGroup.getCheckedRadioButtonId();
+                break;
+            }
+        }
+
+        public void onRadioButtonClicked(View v){
             boolean checked = ((RadioButton) v).isChecked();
 
             switch (v.getId()) {
@@ -82,6 +93,5 @@ public class MainActivity extends AppCompatActivity {
                     throw new IllegalStateException("Unexpected value: " + v);
             }
         }
-
     }
 }
